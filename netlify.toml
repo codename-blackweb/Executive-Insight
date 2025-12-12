@@ -1,9 +1,7 @@
 [build]
-  command = "npm run frontend -- --mode=production"
-  publish = "client/dist"
-
-[build.environment]
-  NODE_VERSION = "20"
+  base = "client"
+  command = "npm install && npm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
