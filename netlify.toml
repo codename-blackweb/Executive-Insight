@@ -2,6 +2,10 @@
   command = "npm run frontend -- --mode=production"
   publish = "client/dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--omit=dev"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
